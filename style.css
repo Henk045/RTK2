@@ -9,6 +9,12 @@ body {
     background-position: center;
 }
 
+@media screen and (max-width: 800px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
