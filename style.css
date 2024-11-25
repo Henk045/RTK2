@@ -124,6 +124,10 @@ html {
     .header {
         display:none;
     }
+    .header.logo {
+        position: fixed;
+        top: 0;
+    }
 
     .topnav {
         width: 101%;
