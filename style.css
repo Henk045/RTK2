@@ -94,7 +94,7 @@ body {
 }
 
 .full-width {
-    display: flex; /* Use flexbox to center */
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -109,7 +109,7 @@ body {
 .full-width img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: scale-down; /* Ensures it scales down if larger than container */
+    object-fit: scale-down;
 }
 
 
@@ -139,7 +139,6 @@ html {
         border-radius: unset;
     }
 
-    /* currently the content text goes out of the screen */
     /* .content h1 {
         font-size: 1.5rem; */
 
