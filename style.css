@@ -6,9 +6,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center 5px;
 }
-
 
 .topnav {
     background-color: #333;
@@ -24,7 +23,6 @@ body {
     position: fixed !important;
 }
 
-
 .topnav a {
     display: inline-block;
     color: white;
@@ -32,6 +30,8 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .topnav a:hover {
@@ -48,10 +48,11 @@ body {
     padding: 20px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.85);
-    width: 800px;
-    margin: 80px auto 0 auto;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
 }
 
 .button {
@@ -66,17 +67,26 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    color: black;
+    background-color: #1cfa24;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #4CAF50;
     color: white;
     padding: 20px;
+    font-family: serif;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
 }
 
 .header .header--content {
@@ -94,7 +104,7 @@ body {
 }
 
 .full-width {
-    display: flex; /* Use flexbox to center */
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -109,41 +119,28 @@ body {
 .full-width img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: scale-down; /* Ensures it scales down if larger than container */
+    object-fit: scale-down;
 }
-
-
 
 html {
     overflow-x: hidden;
 }
 
-
-
-@media screen and (max-width: 583px) {
-    .header {
-        display:none;
-    }
-
-    .topnav {
-        width: 101%;
+@media screen and (max-width: 800px) {
+    .header .logo {
+        display: none;
     }
 
     .content {
-        width: 100%;
+        width: 95%;
         padding: 10px;
-        border-radius: unset;
+        border-radius: 20px;
     }
 
-    /* currently the content text goes out of the screen */
-    .content h1 {
-        font-size: 1.5rem;
-
+    .topnav a {
+        padding: 10px;
+        font-size: 15px;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 1314px) {
@@ -151,5 +148,3 @@ html {
         display: none;
     }
 }
-
-
